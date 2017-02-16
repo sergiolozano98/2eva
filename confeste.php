@@ -27,7 +27,7 @@
           </tr>
         <?php
 
-        $east = $nba->mostraConfEste();
+        $east = $nba->mostrarConfEste();
         echo "<h3>Conferencia Este</h3>";
         while ($Confe = $east->fetch_assoc()) {
 

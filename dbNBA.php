@@ -19,14 +19,14 @@ class dbNBA
     return $this->error;
   }
   //Aqui definimos las distintas funciones que son consultas a la base de datos
-  public function mostraEquipos(){
+  public function mostrarEquipos(){
     return $equipos=$this->conexion->query("SELECT * FROM equipos");
   }
   //aqui definimos que lo que le pasemos por mostraTemporada()=$temporada y en el where se lo pasamos
-  public function mostraTemporada($temporada){
+  public function mostrarTemporada($temporada){
     return $temp=$this->conexion->query("SELECT * FROM partidos where temporada=".$temporada);
   }
-  public function mostraConfEste(){
+  public function mostrarConfEste(){
     return $ConEste=$this->conexion->query("SELECT * FROM equipos where Conferencia='East'");
   }
 }

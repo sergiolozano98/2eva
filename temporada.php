@@ -29,7 +29,7 @@
         <?php
         //aqui en temporada le pasamos la temporada que quiere que nos muestre por pantalla
         //en la dbNBA la temporada que le pasamos por mostraTemporada()=$temporada;
-        $temporada = $nba->mostraTemporada("'03/04'");
+        $temporada = $nba->mostrarTemporada("'03/04'");
         echo "<h3>Temporadas</h3>";
         while ($Temp99 = $temporada->fetch_assoc()) {
 

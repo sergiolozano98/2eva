@@ -32,7 +32,7 @@
     <?php
     //llamamos a la funcion mostrar equipos de la base de datos
 
-    $Equipos = $nba->mostraEquipos();
+    $Equipos = $nba->mostrarEquipos();
     //con el while vamos recorriendo y mostrando por pantalla los datos de los equipos
     while ($listaequipos = $Equipos->fetch_assoc()) {
 
